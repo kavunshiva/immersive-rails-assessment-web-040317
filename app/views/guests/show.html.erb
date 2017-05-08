@@ -1,0 +1,6 @@
+<p>
+  <strong>Guest:</strong> <%= @guest.name %><br/>
+  <strong>Occupation:</strong> <%= @guest.occupation %>
+</p>
+<hr/>
+<%= link_to "Create a new appearance for this guest", controller: "appearances", action: "new", guest_id: @guest.id %>
